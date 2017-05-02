@@ -4,7 +4,7 @@
 #
 Name     : zope.component
 Version  : 4.3.0
-Release  : 1
+Release  : 2
 URL      : https://pypi.python.org/packages/c9/56/501d51f0277af1899d1381e4b9928b5e14675187752622ddc344a756439d/zope.component-4.3.0.tar.gz
 Source0  : https://pypi.python.org/packages/c9/56/501d51f0277af1899d1381e4b9928b5e14675187752622ddc344a756439d/zope.component-4.3.0.tar.gz
 Summary  : Zope Component Architecture

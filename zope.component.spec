@@ -4,7 +4,7 @@
 #
 Name     : zope.component
 Version  : 4.4.0
-Release  : 4
+Release  : 5
 URL      : https://pypi.debian.net/zope.component/zope.component-4.4.0.tar.gz
 Source0  : https://pypi.debian.net/zope.component/zope.component-4.4.0.tar.gz
 Summary  : Zope Component Architecture
@@ -76,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1512081592
+export SOURCE_DATE_EPOCH=1512086056
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -86,7 +86,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 make check || :
 %install
-export SOURCE_DATE_EPOCH=1512081592
+export SOURCE_DATE_EPOCH=1512086056
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force

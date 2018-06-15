@@ -4,13 +4,14 @@
 #
 Name     : zope.component
 Version  : 4.4.1
-Release  : 11
+Release  : 12
 URL      : https://pypi.debian.net/zope.component/zope.component-4.4.1.tar.gz
 Source0  : https://pypi.debian.net/zope.component/zope.component-4.4.1.tar.gz
 Summary  : Zope Component Architecture
 Group    : Development/Tools
 License  : ZPL-2.1
 Requires: zope.component-python3
+Requires: zope.component-license
 Requires: zope.component-python
 Requires: Sphinx
 Requires: persistent
@@ -29,7 +30,6 @@ BuildRequires : component-python
 BuildRequires : pbr
 BuildRequires : persistent-python
 BuildRequires : pip
-
 BuildRequires : python3-dev
 BuildRequires : setuptools
 BuildRequires : zope.configuration-python
@@ -46,6 +46,14 @@ BuildRequires : zope.testing-python
 
 %description
 ==================
+
+%package license
+Summary: license components for the zope.component package.
+Group: Default
+
+%description license
+license components for the zope.component package.
+
 
 %package python
 Summary: python components for the zope.component package.
@@ -73,7 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1512997232
+export SOURCE_DATE_EPOCH=1529092503
 python3 setup.py build -b py3
 
 %check
@@ -83,6 +91,8 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make check || :
 %install
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/doc/zope.component
+cp LICENSE.txt %{buildroot}/usr/share/doc/zope.component/LICENSE.txt
 python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -90,6 +100,10 @@ echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
+
+%files license
+%defattr(-,root,root,-)
+/usr/share/doc/zope.component/LICENSE.txt
 
 %files python
 %defattr(-,root,root,-)

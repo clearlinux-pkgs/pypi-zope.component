@@ -29,7 +29,7 @@ BuildRequires : component-python
 BuildRequires : pbr
 BuildRequires : persistent-python
 BuildRequires : pip
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : setuptools
 BuildRequires : zope.configuration-python

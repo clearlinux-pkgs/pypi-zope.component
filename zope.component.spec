@@ -4,7 +4,7 @@
 #
 Name     : zope.component
 Version  : 4.4.1
-Release  : 10
+Release  : 11
 URL      : https://pypi.debian.net/zope.component/zope.component-4.4.1.tar.gz
 Source0  : https://pypi.debian.net/zope.component/zope.component-4.4.1.tar.gz
 Summary  : Zope Component Architecture

@@ -1,5 +1,5 @@
 PKG_NAME := zope.component
-URL = https://files.pythonhosted.org/packages/b0/f3/ac5d649165f86d8174ad54f095f6109d72d9dac6aa4cdc6235fefb2007b9/zope.component-4.6.1.tar.gz
+URL = https://files.pythonhosted.org/packages/5d/e7/14935f56295e6a9a4ebcc82e30403f4bf580760801ea7ac6bae61ef0267b/zope.component-4.6.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

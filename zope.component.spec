@@ -4,7 +4,7 @@
 #
 Name     : zope.component
 Version  : 5.0.0
-Release  : 35
+Release  : 36
 URL      : https://files.pythonhosted.org/packages/bc/e1/4f413e088d0c80c1f616b773f326096eee9f0fe13fbf745ed6e8c1a10af3/zope.component-5.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/bc/e1/4f413e088d0c80c1f616b773f326096eee9f0fe13fbf745ed6e8c1a10af3/zope.component-5.0.0.tar.gz
 Summary  : Zope Component Architecture

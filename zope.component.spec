@@ -4,7 +4,7 @@
 #
 Name     : zope.component
 Version  : 5.0.1
-Release  : 44
+Release  : 45
 URL      : https://files.pythonhosted.org/packages/c5/c0/64931e1e8f2bfde9d8bc01670de2d2a395efcf8f49d3a9daa21cf3ffee2b/zope.component-5.0.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c5/c0/64931e1e8f2bfde9d8bc01670de2d2a395efcf8f49d3a9daa21cf3ffee2b/zope.component-5.0.1.tar.gz
 Summary  : Zope Component Architecture
@@ -13,20 +13,17 @@ License  : ZPL-2.1
 Requires: zope.component-license = %{version}-%{release}
 Requires: zope.component-python = %{version}-%{release}
 Requires: zope.component-python3 = %{version}-%{release}
-Requires: setuptools
-Requires: zope.event
-Requires: zope.hookable
-Requires: zope.interface
 BuildRequires : buildreq-distutils3
 BuildRequires : component-python
 BuildRequires : persistent-python
-BuildRequires : setuptools
+BuildRequires : pypi(setuptools)
+BuildRequires : pypi(zope.event)
+BuildRequires : pypi(zope.hookable)
+BuildRequires : pypi(zope.interface)
 BuildRequires : zope.configuration-python
-BuildRequires : zope.event
 BuildRequires : zope.exceptions-python
 BuildRequires : zope.hookable
 BuildRequires : zope.i18nmessageid-python
-BuildRequires : zope.interface
 BuildRequires : zope.location-python
 BuildRequires : zope.proxy-python
 BuildRequires : zope.schema-python
@@ -77,15 +74,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1625868799
+export SOURCE_DATE_EPOCH=1641416240
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 

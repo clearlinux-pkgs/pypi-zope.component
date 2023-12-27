@@ -5,7 +5,7 @@
 #
 Name     : pypi-zope.component
 Version  : 6.0
-Release  : 59
+Release  : 60
 URL      : https://files.pythonhosted.org/packages/53/32/87db95f4a5f097aa837dcb951f5a4754e2e8d3ac70160a6c2df7bd215956/zope.component-6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/53/32/87db95f4a5f097aa837dcb951f5a4754e2e8d3ac70160a6c2df7bd215956/zope.component-6.0.tar.gz
 Summary  : Zope Component Architecture
